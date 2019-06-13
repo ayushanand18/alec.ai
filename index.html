@@ -1,4 +1,4 @@
-﻿<!doctype HTML>
+<!doctype HTML>
 <html lang="en">
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -39,90 +39,165 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<meta charset="utf-8" name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 	<style>
-	input[type=button] {
-		background-color: black;
-		color: white;
-		line-height: 22px;
-		padding: 15px;
-		margin-left:30px;
-		padding-left: 60px;
-		padding-right: 60px;
-		width: 70%;
-		max-width:400px;
-		border-radius: 2px;
-		box-shadow: none;
-		border: 1px solid black;
+	.top-div{
+		background: white;
+		position: fixed !important;
+		padding-left: 16px !important;
+		padding-top: 14px !important;
+		padding-right: 10px;
+		top:0px !important;
+		right: 0px !important;
+		left:0px !important;
+		padding-bottom: 10px !important;
 	}
-	input[type=button]:hover {
-		background-color: #f4f5f5;
-		color: #333;
-		cursor: pointer;
-		transition: all 0.3s ease;
-		border-color:black;
+	.top-div .logo-txt{
+		font-family: "Roboto", sans-serif;
+		font-size: 24px;
+		padding-left: 15px;
+		font-weight: 600;
+		letter-spacing: 1.5px;
+	}
+	.top-div .lnk{
+		text-decoration: none;
+		float:right !important;
+		overflow: hidden;
+		color: grey;
+		font-size: 14px;
+		padding-right: 20px;
+		padding-top:5px;
+	}
+	.top-div .lnch{
+		//74,144,226;
+		background-color: rgb(56,147,228);
+		color: white;
+		padding: 12px;
+		padding-left: 28px;
+		padding-right:28px;
+		border-radius: 5px;
+		position:relative;
+		top: -6px;
+		right:10px;
+	}
+	.first-cvr{
+		padding-top:120px;
+		font-size: 20px;
+		letter-spacing: 1.2px;
+	}
+	.first-cvr .toWeb{
+		background-color: rgb(56,147,228);
+		color: white;
+		margin-top:40px;
+		padding: 15px;
+		padding-left: 45px;
+		padding-right:45px;
+		border-radius: 5px;
+		border: none;
+	}
+	.first-cvr .opn{
+		font-size: 46px !important;
+		line-height:100px !important;
+		color: rgb(56,147,227);
+	}
+	.first-cvr .cls{
+		font-size: 46px !important;
+		color:black;
+	}
+	.second-cvr{
+		padding: 10px;
+		padding-top: 200px;
+	}
+	.second-cvr .hdng{
+		float:center;
+		display: inline;
+		font-size: 34px;
+	}
+	.second-cvr .info{
+		font-size:16px;
+		line-height: 24px !important;
+		width: 100% !important;
 	}
 	body {
-	background-color:#f4f5f5 !important;
+	background-color:white !important;
 	height:100% !important;
 	color:#333;
-	line-height:1.4285;
-	font-family:"Roboto";
+	font-family:"Roboto",sans-serif;
+	font-weight: 400 !important;
 	font-size:14px;
 	}
-	.info-div{
-	padding-left:30px;
-	font-size:20px;
-	text-align: justify;
+
+	@media screen and (min-width:750px){
+	/* Tablet Screen */
+	.top-div .lnk{
+		font-size:16px;
+		padding-right:45px;
 	}
-	p{
-	max-width:600px;
-	width:90%;
-	font-size:15px;
+	.top-div .lnch{
+		padding-left:40px;
+		padding-right: 40px;
 	}
-	.extraspc{
-	display:none;
+	.contents{
+		width:70%;
+		margin-left: 15%;
 	}
-@media screen and (min-width:1024px){
-	.extraspc{
-	display: inline;
 	}
-	input[type=button] {
-	margin-left: 80px !important;
+	@media screen and (min-width:1020px){
+	/* Small Laptop Screen */
+	.top-div .lnch{
+		margin-right:50px;
 	}
-	.info-div{
-	text-align: justify;
-	max-width:680px;
+	.contents{
+		width:55%;
+		margin-left: 22.5%;
 	}
-	.info-div{
-	padding-left:80px;
-	font-size:20px;
+	.top-div .logo-txt{
+		padding-left: 50px !important;
 	}
+	}
+	@media screen and (min-width:1430px){
+	/* Large Laptop Screen */
 	
-}
+	}
 	</style>
 	<title> Alec AI Assist </title>
 </head>
 <body>
-<div class="info-div">
-<br/>
-	<span class = 'extraspc'>
-<br/><br/><br/>
-	</span>
-<h2>
-Alec AI Assist
-</h2>
-<p>
-Alec AI Assist is a Machine Learning Chatbot that helps you  fight against Fake News.Alec AI Assist is an initiative by InTru Innovations all curated in the fight against cyber threats and make a safe digital space by its developer Ayush Anand.
-<br/><br/>
-<u>
-Note: Alec AI Assist is still in Beta. Read the Privacy Notice <a href="https://ayushanand18.github.io/prvcy.html"> Here </a> 	
-</u>
-</p>
-</div>
-<br/><br/>
+	
+	<div class="top-div">
+		<span class="logo-txt" > ALEC.AI </span>
+		<a href="alec.html" class="lnk lnch" > LAUNCH </a>
+		<a href="#" class="lnk"> ON ASSISTANT </a>
+		<a href="index.html" class="lnk"> HOME </a>
+	</div>
+	<div class="contents">
+	<div class='first-cvr'>
+		<center>
+			<span class='opn'> Hi, I'm Alec </span> <br/>
+			<span> Smart, simple and responsive.</span> <br/> <br/>
+			<span class="cls"> AI Assistant </span>	 <br/><br/>
+		
+			<input type="button" onclick="javascript: window.location.href='alec.html'" class="toWeb" value="LAUNCH IT ON WEB" />
+		</center>
+	</div>
+	
+	<div class="second-cvr">
+		<center>
+			<span class="hdng"> Here's AI to Take on Fake News </span> <br/><br/>	
+		</center>
+		
+		<p class="info">
+			Alec AI Assist is a Machine Learning Chatbot that helps you  fight against Fake News.Alec AI Assist is an initiative by InTru Innovations all curated in the fight against cyber threats and make a safe digital space by its developer Ayush Anand.
+		</p>
+	</div>
+	
+	<div class="footer-div">
+		
+	</div>
+	</div>
+<!--	
 
 <input type="button" value="GET ALEC FOR WEB" onclick="window.location.href='alec.html' "/> <br/> <br/>
 <input type="button" value="GET ALEC ON G ASSISTANT" onclick="window.location.href='https://assistant.google.com/services/a/uid/00000042d67a9722?hl%3Den%26source%3Dweb&hl=en-IN&jsmode=o&source=web' "/>
 
-
+-->
 </body>
 </html>

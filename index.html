@@ -165,6 +165,62 @@
 	/* Large Laptop Screen */
 	
 	}
+	.lnke{
+		display:none;
+	}
+	
+	#side_arrwid, .sidecls{
+		font-size: 22px;
+		color: black;
+		background-color: #f4f4f4;
+		position:fixed;
+		top: 55px;
+		display: inline-block;
+		border: 0.5px solid white;
+    	border-width: 0 1px 1px 0;
+    	-webkit-border-radius: 0 90px 90px 0;
+    	-moz-border-radius: 0 90px 90px 0;
+    	border-radius: 0 90px 90px 0;
+		left: 0px;
+		padding-left:15px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		width:20px;
+		padding-right:8px;
+	}
+	.sidecls{
+		display: none;
+	}
+	.panel{
+		position: fixed;
+		left: -1000px;
+		display: inline-block;
+		border: 1px solid white;
+    	border-width: 0 1px 1px 0;
+    	-webkit-border-radius: 0 90px 90px 0;
+    	-moz-border-radius: 0 90px 90px 0;
+    	border-radius: 0 90px 90px 0;
+    	background: #f4f4f4;
+    	color:black !important;
+    	padding:14px;
+    	padding-right: 18px;
+    	text-decoration: none !important;
+    	padding-left:10px;
+	}
+	.panel a{
+		text-decoration: none;
+		color: black;
+		font-size:16px;
+		line-height:23px !important;
+	}
+	@media screen and (min-width:450px){
+		.lnke{
+			display: inline;
+		}
+		#side_arrwid{
+			display:none;
+		}
+	}
 	</style>
 	<title> Alec AI Assist </title>
 </head>
@@ -173,8 +229,15 @@
 	<div class="top-div">
 		<span class="logo-txt" > ALEC.AI </span>
 		<a href="alec.html" class="lnk lnch" > LAUNCH </a>
+		<a href="https://assistant.google.com/services/a/uid/00000042d67a9722?hl%3Den%26source%3Dweb&hl=en-IN&jsmode=o&source=web" class="lnk lnke"> ON ASSISTANT </a>
+		<a href="index.html" class="lnk lnke"> HOME </a>
+		<br/> <br>
+		<span id ="side_arrwid" class="side_arrw"> > </span>
+	</div>
+	<div class="panel">
+		<span class="sidecls"> &times; </span>
+		<a href="index.html" class="lnk"> HOME </a> <br/>
 		<a href="https://assistant.google.com/services/a/uid/00000042d67a9722?hl%3Den%26source%3Dweb&hl=en-IN&jsmode=o&source=web" class="lnk"> ON ASSISTANT </a>
-		<a href="index.html" class="lnk"> HOME </a>
 	</div>
 	<div class="contents">
 	<div class='first-cvr'>
@@ -201,16 +264,30 @@
 		<br/> <br/>
 		<center>
 			Made in India <br/><br/>
-			&copy; 2019 Ayush Anand  <a href="https://ayushanand18.github.io/prvcy.html"> Privacy Policy </a>	
+			&copy; 2019 Ayush Anand  <a href="https://ayushanand18.github.io/prvcy.html"> Privacy Policy </a> and <a href="https://ayushanand18.github.io/cookies.html"> Cookie Policy </a>	
 		</center>
-		<br/><br/>
+		<br/>
 	</div>
 	</div>
-<!--	
 
-<input type="button" value="GET ALEC FOR WEB" onclick="window.location.href='alec.html' "/> <br/> <br/>
-<input type="button" value="GET ALEC ON G ASSISTANT" onclick="window.location.href='https://assistant.google.com/services/a/uid/00000042d67a9722?hl%3Den%26source%3Dweb&hl=en-IN&jsmode=o&source=web' "/>
+	<script>
+		var panel = document.querySelector(".panel");
+		var sidearrw= document.querySelector(".side_arrw");
+		var sidecls = document.querySelector(".sidecls");
+		sidearrw.addEventListener("click", function(){
+				panel.style.top="96px";
+				panel.style.left="0px";
+				panel.style.transition=" all 0.3s ease";
+				sidecls.style.display="inline";
+		});
 
--->
+		sidecls.addEventListener("click", function(){
+				panel.style.left="-1000px";
+				sidecls.style.display="none";
+		});
+		
+	</script>
+
+
 </body>
 </html>

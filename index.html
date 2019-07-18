@@ -70,28 +70,51 @@
 		//74,144,226;
 		background-color: rgb(56,147,228);
 		color: white;
-		padding: 12px;
+		padding: 10px;
 		padding-left: 28px;
 		padding-right:28px;
 		border-radius: 5px;
 		position:relative;
 		top: -6px;
 		right:10px;
+		border: 1.5px solid rgb(56,147,228);
+	}
+	.top-div .lnch:hover{
+		background-color: white;
+		color: rgb(56,147,228);
+		border: 1.5px solid rgb(56,147,228);
+		transition: all 0.3s ease;
+		cursor: pointer;
 	}
 	.first-cvr{
 		padding-top:120px;
 		font-size: 20px;
 		letter-spacing: 1.2px;
 	}
+	.first-cvr .othr-txt{
+		font-size: 16px;
+	}
+	.first-cvr b{
+		font-size: 18px;
+	}
 	.first-cvr .toWeb{
 		background-color: rgb(56,147,228);
 		color: white;
 		margin-top:40px;
-		padding: 15px;
-		padding-left: 45px;
-		padding-right:45px;
-		border-radius: 5px;
-		border: none;
+		padding: 18px;
+		padding-left: 50px;
+		padding-right: 50px;
+		border-radius: 0px;
+		border: 1.5px solid rgb(56,147,228);
+		font-size: 16px;
+	}
+	.first-cvr .toWeb:hover{
+		background-color: white;
+		color: rgb(56,147,228);
+		border: 1.5px solid rgb(56,147,228);
+		transition: all 0.3s ease;
+		cursor: pointer;
+		font-weight: 600;
 	}
 	.first-cvr .opn{
 		font-size: 46px !important;
@@ -232,7 +255,6 @@
 		<a href="https://assistant.google.com/services/a/uid/00000042d67a9722?hl%3Den%26source%3Dweb&hl=en-IN&jsmode=o&source=web" class="lnk lnke"> ON ASSISTANT </a>
 		<a href="index.html" class="lnk lnke"> HOME </a>
 		<br/> <br>
-		<span id ="side_arrwid" class="side_arrw"> > </span>
 	</div>
 	<div class="panel">
 		<span class="sidecls"> &times; </span>
@@ -247,6 +269,11 @@
 			<span class="cls"> AI Assistant </span>	 <br/><br/>
 		
 			<input type="button" onclick="javascript: window.location.href='alec.html'" class="toWeb" value="LAUNCH IT ON WEB" />
+			<br/><br/>
+			<span class="othr-txt"> or on
+			<b> Google Assistant </b> <br/>
+			<img src="Images/google-assistant.png" height=80px onclick=" javascript: window.location.href='https://assistant.google.com/services/a/uid/00000042d67a9722?hl%3Den%26source%3Dweb&hl=en-IN&jsmode=o&source=git' "/>
+			</span>
 		</center>
 	</div>
 	
@@ -258,6 +285,11 @@
 		<p class="info">
 			Alec AI Assist is a Machine Learning Chatbot that helps you  fight against Fake News.Alec AI Assist is an initiative by InTru Innovations all curated in the fight against cyber threats and make a safe digital space by its developer Ayush Anand.
 		</p>
+		<br/>
+		<p class="info"> Please Note that this is in development mode, we don't yet support Fake News Classification via our Chatbot due to Billing Issues with the GOOGLE Infrastructure. <br/>
+		We strongly believe that we will find a way with it latest by October 30<sup>th</sup>, 2019. <br/>
+		We hope that if anyone of you wants to help us in this not-for-profit project by getting us rid of the billing issue (existing GCP or Azure or AWS users might be familiar with this term) then they are most welcome. Since I am a student in Class 11 in India and I have been awarded USD 2400 for the Launch of my Action on Google Assistant.<br/>
+		To contact me you can fill this short form at <a href="https://ayushanand18.github.io/contact.html">https://ayushanand18.github.io/contact.html</a></a></p>
 	</div>
 	
 	<div class="footer-div">
@@ -270,23 +302,7 @@
 	</div>
 	</div>
 
-	<script>
-		var panel = document.querySelector(".panel");
-		var sidearrw= document.querySelector(".side_arrw");
-		var sidecls = document.querySelector(".sidecls");
-		sidearrw.addEventListener("click", function(){
-				panel.style.top="96px";
-				panel.style.left="0px";
-				panel.style.transition=" all 0.3s ease";
-				sidecls.style.display="inline";
-		});
 
-		sidecls.addEventListener("click", function(){
-				panel.style.left="-1000px";
-				sidecls.style.display="none";
-		});
-		
-	</script>
 
 
 </body>

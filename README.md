@@ -14,7 +14,7 @@
 <p  >To deliver a richer experience to its user, Alec AI Assist uses NLP (Natural Language Processing). It has been developed with the Official DialogFlow Development window, which tightly integrates with the Google Assistant. Additionally, it uses Natural and _Brain _Node.JS Packages to implement an NLC (Natural Language Classification).<br/>
 It extracts the user input with parameters defined with contexts, and then processes it to achieve a predicted result. With about 98.7903226% accuracy it can deliver results in as less as 1352 milliseconds.
 <hr>
-<h3  >How it wors?</h3>
+<h3  >How it works?</h3>
 <p  >
 Additionally, it uses Natural and _Brain _Node JS Packages to implement an NLC (Natural Language Classification). <br/>
 It gets the text to be classified from the user input using "Parameters" during the conversation. Then, with the Cloud Function paired with the webhook in the intent processes the text with pre-trained model of Node Packages and displays the output.
@@ -39,4 +39,4 @@ In about 1.3s you will be provided with the Machine Learning Prediction for the 
 
 Thank You <br/>
 With &hearts; from <b>Ayush Anand</b>
-		</p>
+</p>

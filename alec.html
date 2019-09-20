@@ -13,24 +13,67 @@
 	<meta charset="utf-8" name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 <title> Alec AI Assist </title>
 <style>
-    .iframe{
-        position:fixed;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom:0px;
-        border: none !important;
+    body{
+        background-color:#F8F8F8;
     }
+    .container-iframe{
+        width:100%;
+        background-color:#F8F8F8;
+        overflow:hidden;
+        float:left;
+        height: 100%;
+        position:fixed;
+        top: 0px !important;
+        left: 0px !important;
+        right: 0px !important;
+        bottom:0px !important;   
+    }
+    @media screen and (min-width:756px){
+        .container-iframe{
+            padding-left: 36%;
+            margin-top:5%;
+            
+        }
+        .iframe{
+            top:100px !important;
+            left:600px !important;
+            right:200px !important;
+            width:32%;
+            height:500px !important;
+            border:none !important;
+        }
+    }
+
+    @media screen and (max-width:750px){
+        .iframe{
+            position:fixed;
+            top: 0px !important;
+            left: 0px !important;
+            right: 0px !important;
+            bottom:0px !important;
+            height:100%;
+            width:100%;
+            border: none !important;
+        }
+        .container-iframe{
+            margin:0px !important;
+            padding:0px !important;
+            width:100% !important;
+            left:0px !important;
+            right:0px !important;
+        }
+    }
+    
 </style>
 </head>
 <body>
-<iframe 
-    class="iframe"
-    allow="microphone;"
-    src="https://console.dialogflow.com/api-client/demo/embedded/4f026bc8-51b0-4a80-bd9c-0329bdbcc103"
-    height="100%"
-    width="100%">
-</iframe>
-    
+    <div class="container-iframe">
+        <iframe 
+            class="iframe"
+            allow="microphone;"
+            src="https://console.dialogflow.com/api-client/demo/embedded/4f026bc8-51b0-4a80-bd9c-0329bdbcc103"
+            >
+        </iframe>
+    </div>
 </body>
 </html>

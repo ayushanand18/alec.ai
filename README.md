@@ -1,6 +1,5 @@
-<h2> Documentation </h2> <br/>
+<h2> Documentation </h2>
 <h2> Alec AI Assist </h2>
-<br/>
 <h3 >About</h3>
 <p >Alec AI Assist is a Machine Learning Chatbot that helps you fight against Fake News. Alec AI Assist is an initiative by InTru Innovations all curated in the fight against cyber threats and make a safe digital space by its developer Ayush Anand.
 <hr>

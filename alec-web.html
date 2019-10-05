@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <p> Try Alec via simple AJAX Request to IBM Watson NLC </p>
+    <textarea id="txt" rows=5 cols=50 placeholder="Enter Text for Classification"></textarea>
+
+    <p id="demo"> 
+    <iframe id="iframe" width=60% height=50px src="https://now-express.intru-innovation.now.sh" /></iframe>
+    </p>
+    <input type="button" value="Get Classification" onclick="javascript:loadsEx()" id="bttn" />
+    <script>
+var txt=document.getElementById("txt");
+var ifrae=document.getElementById("iframe");
+    ifrae.style.border="none";
+function loadsEx(){
+    var neurl =txt.value;
+    var newurl="https://now-express.intru-innovation.now.sh"+"?name="+neurl ;
+    ifrae.setAttribute("src",newurl);
+};
+
+
+</script>
+        
+</body>
+
+</html>

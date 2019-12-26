@@ -24,12 +24,12 @@ It gets the text to be classified from the user input using "Parameters" during 
 In about 1.3s you will be provided with the Machine Learning Prediction for the text </p>
 
 <button onclick="window.location.href='https://assistant.google.com/services/a/uid/00000042d67a9722?hl=en' " class="btn btn-primary">Launch Alec on Google Assistant </button>
-<hr>        
+<hr>
 <br/><br/>
 <h3  > Installation </h3>
-<p'> There is no Installation required. All you need is a Device on which Google Assistant is enabled.</p>
+<p> There is no Installation required. All you need is a Device on which Google Assistant is enabled.</p>
 
-<hr>        
+<hr>
 <h3  > Note </h3>
 <p class='text-danger info'> This is a Machine Learning Classification therefore, results might be inaccurate </p>
 <br/>

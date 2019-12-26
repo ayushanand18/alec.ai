@@ -1,0 +1,25 @@
+{
+  "name": "dialogflowFirebaseFulfillment",
+  "description": "This is the default fulfillment for a Dialogflow agents using Cloud Functions for Firebase",
+  "version": "0.3.1",
+  "private": true,
+  "license": "GNU AGPLv3",
+  "author": "Ayush Anand",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "start": "firebase serve --only functions:dialogflowFirebaseFulfillment",
+    "deploy": "firebase deploy --only functions:dialogflowFirebaseFulfillment"
+  },
+  "dependencies": {
+    "actions-on-google": "^2.5.0",
+    "brain.js": "^1.1.2",
+    "dialogflow": "^0.10.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.2.0",
+    "fs": "0.0.1-security",
+    "natural": "^0.6.3"
+  }
+}
